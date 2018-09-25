@@ -10,7 +10,7 @@ export default function createStore(reducer) {
     return state
   }
 
-  dispatch({ type: '@@INIT' })
+  newFunction();
 
 
   return {
@@ -20,6 +20,10 @@ export default function createStore(reducer) {
 
 
 
+
+  function newFunction() {
+    dispatch({ type: '@@INIT' });
+  }
 }
 
 function render() {
